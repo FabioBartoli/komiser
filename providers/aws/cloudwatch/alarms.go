@@ -141,7 +141,7 @@ func calculateCostPerMonth(pricingOutput *pricing.GetProductsOutput) (float64, e
 						if err != nil {
 							return 0, fmt.Errorf("failed to parse cost per month: %w", err)
 						}
-						costPerMonth = cost * AverageHoursPerMonth
+						costPerMonth = cost
 						break
 
 					}
